@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Jadhav Associates</title>
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-gray-200">
+
+<!-- NAVBAR -->
+<nav class="bg-gray-800 p-4 flex justify-between">
+<h1 class="text-xl font-bold text-yellow-400">Jadhav Associates</h1>
+<div>
+<a href="index.html" class="px-3">Home</a>
+<a href="about.html" class="px-3">About</a>
+<a href="services.html" class="px-3">Services</a>
+<a href="projects.html" class="px-3">Projects</a>
+<a href="contact.html" class="px-3 text-yellow-400">Contact</a>
+</div>
+</nav>
+
+<!-- CONTACT FORM -->
+<section class="py-16">
+
+<div class="max-w-4xl mx-auto bg-gray-800 rounded-2xl shadow-2xl p-10">
+
+<h2 class="text-3xl font-bold text-center text-yellow-400 mb-8">
+Request a Project Consultation
+</h2>
+
+<form action="https://formspree.io/f/xaqdkrob" method="POST" class="space-y-6">
+
+<div class="relative">
+<input type="text" name="name" required
+class="peer w-full bg-gray-900 border border-gray-600 rounded-lg p-4 text-white focus:border-yellow-400 focus:outline-none">
+<label class="absolute left-4 top-4 text-gray-400 transition-all peer-focus:-top-3 peer-focus:text-sm peer-focus:text-yellow-400 peer-valid:-top-3 peer-valid:text-sm bg-gray-800 px-1">
+Full Name
+</label>
+</div>
+
+<div class="relative">
+<input type="tel" name="phone" required
+class="peer w-full bg-gray-900 border border-gray-600 rounded-lg p-4 text-white focus:border-yellow-400 focus:outline-none">
+<label class="absolute left-4 top-4 text-gray-400 transition-all peer-focus:-top-3 peer-focus:text-sm peer-focus:text-yellow-400 peer-valid:-top-3 peer-valid:text-sm bg-gray-800 px-1">
+Phone Number
+</label>
+</div>
+
+<div class="relative">
+<input type="email" name="email" required
+class="peer w-full bg-gray-900 border border-gray-600 rounded-lg p-4 text-white focus:border-yellow-400 focus:outline-none">
+<label class="absolute left-4 top-4 text-gray-400 transition-all peer-focus:-top-3 peer-focus:text-sm peer-focus:text-yellow-400 peer-valid:-top-3 peer-valid:text-sm bg-gray-800 px-1">
+Email Address
+</label>
+</div>
+
+<div class="relative">
+<textarea name="message" rows="5" required
+class="peer w-full bg-gray-900 border border-gray-600 rounded-lg p-4 text-white focus:border-yellow-400 focus:outline-none"></textarea>
+<label class="absolute left-4 top-4 text-gray-400 transition-all peer-focus:-top-3 peer-focus:text-sm peer-focus:text-yellow-400 peer-valid:-top-3 peer-valid:text-sm bg-gray-800 px-1">
+Project Details
+</label>
+</div>
+
+<input type="text" name="_gotcha" style="display:none">
+
+<div class="text-center">
+<button type="submit"
+class="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-10 py-4 rounded-lg transition duration-300 shadow-lg hover:shadow-yellow-500/40">
+Send Inquiry →
+</button>
+</div>
+
+</form>
+
+</div>
+</section>
+
+<footer class="bg-gray-800 p-6 text-center">
+<p>info@jadhavassociates.in</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+body{
+    font-family: 'Inter', sans-serif;
+    scroll-behavior:smooth;
+    }
+    
+    .hero{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e')
+    center/cover;
+    }
+    
+    .card{
+    background:#1f2937;
+    padding:30px;
+    border-radius:10px;
+    transition:0.3s;
+    }
+    
+    .card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(245,158,11,0.4);
+    }
+    
+    .whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:12px 18px;
+    border-radius:50px;
+    }
