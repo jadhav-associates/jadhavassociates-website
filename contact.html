@@ -6,71 +6,96 @@
 
 <title>Contact | Jadhav Associates</title>
 
+<!-- Tailwind -->
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
 <link rel="stylesheet" href="css/style.css">
 
+<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
-<body class="bg-gray-900 text-gray-200">
+<body class="bg-gray-900 text-gray-200 font-[Inter]">
 
-<!-- NAVBAR -->
-<nav class="bg-gray-800 p-4 flex justify-between">
+<!-- ================= NAVBAR ================= -->
+<nav class="bg-gray-800 p-4 flex justify-between items-center">
 <h1 class="text-xl font-bold text-yellow-400">Jadhav Associates</h1>
-<div>
-<a href="index.html" class="px-3">Home</a>
-<a href="about.html" class="px-3">About</a>
-<a href="services.html" class="px-3">Services</a>
-<a href="projects.html" class="px-3">Projects</a>
-<a href="contact.html" class="px-3 text-yellow-400">Contact</a>
+
+<div class="space-x-4">
+<a href="index.html" class="hover:text-yellow-400">Home</a>
+<a href="about.html" class="hover:text-yellow-400">About</a>
+<a href="services.html" class="hover:text-yellow-400">Services</a>
+<a href="projects.html" class="hover:text-yellow-400">Projects</a>
+<a href="contact.html" class="text-yellow-400 font-semibold">Contact</a>
 </div>
 </nav>
 
-<!-- CONTACT FORM -->
-<section class="py-16">
+<!-- ================= CONTACT SECTION ================= -->
+<section class="py-16 px-4">
 
 <div class="max-w-4xl mx-auto bg-gray-800 rounded-2xl shadow-2xl p-10">
 
-<h2 class="text-3xl font-bold text-center text-yellow-400 mb-8">
+<h2 class="text-3xl font-bold text-center text-yellow-400 mb-10">
 Request a Project Consultation
 </h2>
 
+<!-- FORM -->
 <form action="https://formspree.io/f/xaqdkrob" method="POST" class="space-y-6">
 
+<!-- NAME -->
 <div class="relative">
 <input type="text" name="name" required
 class="peer w-full bg-gray-900 border border-gray-600 rounded-lg p-4 text-white focus:border-yellow-400 focus:outline-none">
-<label class="absolute left-4 top-4 text-gray-400 transition-all peer-focus:-top-3 peer-focus:text-sm peer-focus:text-yellow-400 peer-valid:-top-3 peer-valid:text-sm bg-gray-800 px-1">
+<label class="absolute left-4 top-4 text-gray-400 transition-all
+peer-focus:-top-3 peer-focus:text-sm peer-focus:text-yellow-400
+peer-valid:-top-3 peer-valid:text-sm bg-gray-800 px-1">
 Full Name
 </label>
 </div>
 
+<!-- PHONE -->
 <div class="relative">
 <input type="tel" name="phone" required
 class="peer w-full bg-gray-900 border border-gray-600 rounded-lg p-4 text-white focus:border-yellow-400 focus:outline-none">
-<label class="absolute left-4 top-4 text-gray-400 transition-all peer-focus:-top-3 peer-focus:text-sm peer-focus:text-yellow-400 peer-valid:-top-3 peer-valid:text-sm bg-gray-800 px-1">
+<label class="absolute left-4 top-4 text-gray-400 transition-all
+peer-focus:-top-3 peer-focus:text-sm peer-focus:text-yellow-400
+peer-valid:-top-3 peer-valid:text-sm bg-gray-800 px-1">
 Phone Number
 </label>
 </div>
 
+<!-- EMAIL -->
 <div class="relative">
 <input type="email" name="email" required
 class="peer w-full bg-gray-900 border border-gray-600 rounded-lg p-4 text-white focus:border-yellow-400 focus:outline-none">
-<label class="absolute left-4 top-4 text-gray-400 transition-all peer-focus:-top-3 peer-focus:text-sm peer-focus:text-yellow-400 peer-valid:-top-3 peer-valid:text-sm bg-gray-800 px-1">
+<label class="absolute left-4 top-4 text-gray-400 transition-all
+peer-focus:-top-3 peer-focus:text-sm peer-focus:text-yellow-400
+peer-valid:-top-3 peer-valid:text-sm bg-gray-800 px-1">
 Email Address
 </label>
 </div>
 
+<!-- MESSAGE -->
 <div class="relative">
 <textarea name="message" rows="5" required
 class="peer w-full bg-gray-900 border border-gray-600 rounded-lg p-4 text-white focus:border-yellow-400 focus:outline-none"></textarea>
-<label class="absolute left-4 top-4 text-gray-400 transition-all peer-focus:-top-3 peer-focus:text-sm peer-focus:text-yellow-400 peer-valid:-top-3 peer-valid:text-sm bg-gray-800 px-1">
+<label class="absolute left-4 top-4 text-gray-400 transition-all
+peer-focus:-top-3 peer-focus:text-sm peer-focus:text-yellow-400
+peer-valid:-top-3 peer-valid:text-sm bg-gray-800 px-1">
 Project Details
 </label>
 </div>
 
+<!-- Anti Spam -->
 <input type="text" name="_gotcha" style="display:none">
 
+<!-- BUTTON -->
 <div class="text-center">
 <button type="submit"
 class="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-10 py-4 rounded-lg transition duration-300 shadow-lg hover:shadow-yellow-500/40">
@@ -80,35 +105,57 @@ Send Inquiry →
 
 </form>
 
-<div class="mt-12 text-center">
-  <h3 class="text-2xl text-yellow-400 mb-4">Our Office</h3>
+<!-- ================= ADDRESS ================= -->
+<div class="mt-14 text-center border-t border-gray-700 pt-10">
 
-  <p>
-    Jadhav Associates<br>
-    Plot no: 11, Wada colony, Opp. New Municipal building, Near Ambika hotel, Shirur<br>
-    Pune 412210, Maharashtra, India
-  </p>
+<h3 class="text-2xl font-semibold text-yellow-400 mb-4">
+Our Office
+</h3>
+
+<p class="text-gray-300 leading-relaxed">
+<strong>Jadhav Associates</strong><br>
+Plot No. 11, Wada Colony,<br>
+Opp. New Municipal Building,<br>
+Near Ambika Hotel, Shirur,<br>
+Pune – 412210, Maharashtra, India
+</p>
+
+<a href="https://maps.google.com?q=Jadhav+Associates+Shirur"
+target="_blank"
+class="inline-block mt-5 bg-yellow-500 text-black px-6 py-2 rounded hover:bg-yellow-400 transition">
+Open in Google Maps
+</a>
+
 </div>
 
-
-<div class="mt-6 rounded-xl overflow-hidden shadow-lg">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1894.7333549707048!2d74.36245205875599!3d18.82682501522617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc32dca71bb1d85%3A0x4cbe30bb269ed263!2sR9G7%2BP2X%2C%20Shirur%2C%20Maharashtra%20412210!5e0!3m2!1sen!2sin!4v1772367429847!5m2!1sen!2sin"
-    width="100%"
-    height="350"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
+<!-- ================= MAP ================= -->
+<div class="mt-8 rounded-xl overflow-hidden shadow-lg">
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1894.7333549707048!2d74.36245205875599!3d18.82682501522617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc32dca71bb1d85%3A0x4cbe30bb269ed263!2sR9G7%2BP2X%2C%20Shirur%2C%20Maharashtra%20412210!5e0!3m2!1sen!2sin!4v1772367429847!5m2!1sen!2sin"
+width="100%"
+height="350"
+style="border:0;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
 </div>
-  
+
 </div>
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer class="bg-gray-800 p-6 text-center">
-<p>info@jadhavassociates.in</p>
+<p>Email: info@jadhavassociates.in</p>
+<p class="text-sm text-gray-400 mt-2">© 2026 Jadhav Associates</p>
 </footer>
+
+<!-- ================= WHATSAPP FLOAT BUTTON ================= -->
+<a href="https://wa.me/919876543210?text=Hello%20Jadhav%20Associates,%20I%20want%20to%20discuss%20a%20construction%20project."
+target="_blank"
+class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg text-2xl z-50">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
